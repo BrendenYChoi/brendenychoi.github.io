@@ -1,5 +1,227 @@
-title: Brenden Choi
-#logo: /assets/img/headshot_circle.png
-#description: text below image
-#show_downloads: true
-theme: jekyll-theme-minimal
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brenden Choi - Game Developer Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #e0f7fa, #80deea);
+      color: #333;
+      background-image: url('cityscape-bottom.png'), url('clouds-top.png');
+      background-position: bottom center, top center;
+      background-repeat: no-repeat, no-repeat;
+      background-size: cover, cover;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.85);
+      color: #00796b;
+      padding: 30px;
+      border-radius: 0 0 30px 30px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+      background-image: url('clouds-header.png');
+      background-size: cover;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+      margin-right: 20px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+      object-fit: cover;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    nav {
+      text-align: center;
+      padding: 15px 0;
+      background: rgba(0, 102, 94, 0.9);
+      border-radius: 30px;
+      margin: 20px 10%;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    nav a {
+      color: #e0f7fa;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 30px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+      background-image: url('urban-texture.png');
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    h2 {
+      color: #00796b;
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 30px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+      padding: 30px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    section:hover {
+      transform: scale(1.02);
+    }
+
+    .portfolio-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .portfolio-item {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      width: calc(33.333% - 20px);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      background-image: url('urban-overlay.png');
+      background-blend-mode: multiply;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-10px);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    .portfolio-item p {
+      padding: 15px;
+      color: #555;
+    }
+
+    footer {
+      background: rgba(0, 102, 94, 0.9);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      border-radius: 30px 30px 0 0;
+      background-image: url('cityscape-footer.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    footer a {
+      color: #80deea;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="your-photo.jpg" alt="Brenden Choi">
+    <h1>Brenden Choi - Game Developer Portfolio</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="content">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>안녕!! The name’s Brenden and I’m a game developer who specializes in game design with a background in
+        illustration and animation. My expertise lies in crafting immersive gaming experiences that seamlessly integrate
+        engaging gameplay mechanics with visually stunning aesthetics. My fascination with design comes from both
+        player-to-player interactions and player-to-environment dynamics to maintain and preserve immersion.</p>
+      <p>I’m currently attending George Mason University pursuing a bachelor's degree in Computer Game Design with a
+        minor in Computer Science. I’m also currently an Assistant Design Director at GADIG, a video game studio founded
+        on and supported by George Mason University. I also develop indie games in my free time along with participating
+        in various game jams with other developers and creatives.</p>
+      <p>My targeted fields of study are in:
+      <ul>
+        <li>Character, Environmental, and Prop Design</li>
+        <li>Level Design</li>
+        <li>Narrative Design</li>
+        <li>Systems and Mechanics (i.e. Combat and Progression)</li>
+      </ul>
+    
+      <p>Overall I’m a highly motivated and moldable game developer who’s accumulated about two years of industry
+        experience at indies, who’s looking for opportunities to further their horizon. I hope you enjoy my work and I
+        look forward to potentially working with you!</p>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="path/to/your/image1.jpg" alt="Project 1">
+          <p>Project 1 description.</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="path/to/your/image2.jpg" alt="Project 2">
+          <p>Project 2 description.</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="path/to/your/image3.jpg" alt="Project 3">
+          <p>Project 3 description.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to get in touch for collaborations or job opportunities, feel free to reach out through the links
+        below:</p>
+      <p><a href="https://linktr.ee/BrendenYChoi" target="_blank">Linktree</a></p>
+      <p><a href="https://brendenychoi.itch.io/" target="_blank">Itch.io Portfolio</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Brenden Choi | Portfolio Website</p>
+    <p>Coming soon: <strong>Beneath Skies Studio</strong></p>
+  </footer>
+
+</body>
+
+</html>
